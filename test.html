@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+	<script src="jquery.min.js"></script>
+ 	<script src="bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$.getJSON( "test.json", function( data ) {
+		  console.log(data.problems);
+	      var probitems = [];
+	      var contitems = [];
+	      $.each( data.problems, function( key, problem ) {
+	      	$.each(problem.contents, function(key, content){
+	      		contitems.push("<li><a href=\"" + content.clink + "\">" + content.cname + "</a></li>");
+	      	});
+	      	contentsJoined = contitems.join("");
+	      	probitems.push( "<li><h5>" + problem.name + "</h5>" +
+	      					"<h6>" + problem.heading + "</h6>" +
+	      					"<p>" + problem.description + "</p>" +
+	      					"<ul>" + contentsJoined + "</ul></li>");
+	        contitems = []; //clearing array for next loop
+	        console.log(sesuatu);
+	      });
+	     
+	      $( "<ul/>", {
+	        "class": "my-new-list",
+	        html: probitems.join( "" )
+	      }).appendTo( "body" );
+	    });
+	</script>
+</body>
+</html>
