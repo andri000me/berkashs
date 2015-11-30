@@ -1,5 +1,6 @@
 // Variabel
 @pure-black: #000000;
+@pure-white: #FFFFFF;
 @indigo-blue: #4151AA;
 @mud-white: #F5F5F5;
 @salmon-red: #FA8072;
@@ -53,7 +54,7 @@ body {
     }
     .jumbo h2 {
       margin: 0 0 30px;
-      font-size: 1.8em;
+      font-size: 30px;
         color: #fff;
     }
     .panel {
@@ -88,6 +89,29 @@ body {
               font-size: 16px;
               margin-right: 5px;
             }
+          }
+        }
+      }
+    }
+    .footer {
+      display: inline;
+      font-size: 18px;
+      padding: 15px;
+      color: #273068;
+      .copyright {
+        float: left;
+      }
+      .infolinks {
+        float: right;
+        display: inline;
+        a {
+          margin-left: 10px;
+          text-decoration: none;
+          color: #273068;
+          &:hover {
+            border-bottom: 1px dotted #273068;
+            text-decoration: none;
+            color: #273068;
           }
         }
       }

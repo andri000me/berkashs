@@ -33,7 +33,7 @@ body .container #logo {
 }
 body .container .jumbo h2 {
   margin: 0 0 30px;
-  font-size: 1.8em;
+  font-size: 30px;
   color: #fff;
 }
 body .container .panel {
@@ -69,4 +69,27 @@ body .container .panel .panel-body .list-group .list-group-item {
 body .container .panel .panel-body .list-group .list-group-item .glyphicon {
   font-size: 16px;
   margin-right: 5px;
+}
+body .container .footer {
+  display: inline;
+  font-size: 18px;
+  padding: 15px;
+  color: #273068;
+}
+body .container .footer .copyright {
+  float: left;
+}
+body .container .footer .infolinks {
+  float: right;
+  display: inline;
+}
+body .container .footer .infolinks a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #273068;
+}
+body .container .footer .infolinks a:hover {
+  border-bottom: 1px dotted #273068;
+  text-decoration: none;
+  color: #273068;
 }
