@@ -12,84 +12,100 @@
   font-weight: normal;
   font-style: normal;
 }
-body {
-  background-color: #4151AA;
-  overflow-y: scroll;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "clear_sansregular", "San Francisco", "Helvetica Neue", Arial, sans-serif;
-  color: white;
+@media screen {
+  body {
+    background-color: #4151AA;
+    overflow-y: scroll;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "clear_sansregular", "San Francisco", "Helvetica Neue", Arial, sans-serif;
+    color: white;
+  }
+  body .container {
+    max-width: 600px;
+    min-height: 100vh;
+    background-color: #4151AA;
+    height: auto;
+    padding: 0;
+    bottom: 0;
+  }
+  body .container #logo {
+    top: auto;
+    bottom: auto;
+    margin: 15px 0 10px;
+    max-height: 45px;
+  }
+  body .container .jumbo h2 {
+    margin: 0 0 30px;
+    font-size: 24px;
+    color: #fff;
+  }
+  body .container .panel {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border: none;
+    color: #555555;
+  }
+  body .container .panel .panel-title {
+    font-size: 18px;
+    font-family: "clear_sansregular", "San Francisco", "Helvetica Neue", Arial, sans-serif;
+  }
+  body .container .panel .panel-title a {
+    text-decoration: none;
+  }
+  body .container .panel .panel-title a:hover {
+    text-decoration: none;
+    color: #000000;
+  }
+  body .container .panel .panel-title .caret {
+    color: #9A9A9A;
+    margin-right: 10px;
+  }
+  body .container .panel .panel-body {
+    padding: 0;
+  }
+  body .container .panel .panel-body .list-group {
+    margin-bottom: 0;
+  }
+  body .container .panel .panel-body .list-group .list-group-item {
+    border: none;
+    border-bottom: 2px solid #DDDDDD;
+  }
+  body .container .panel .panel-body .list-group .list-group-item .glyphicon {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  body .container .footer {
+    display: inline;
+    font-size: 18px;
+    padding: 15px;
+    color: #273068;
+  }
+  body .container .footer .copyright {
+    float: left;
+  }
+  body .container .footer .infolinks {
+    float: right;
+    display: inline;
+  }
+  body .container .footer .infolinks a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #273068;
+  }
+  body .container .footer .infolinks a:hover {
+    border-bottom: 1px dotted #273068;
+    text-decoration: none;
+    color: #273068;
+  }
 }
-body .container {
-  max-width: 600px;
-  min-height: 100vh;
-  background-color: #4151AA;
-  height: auto;
-  bottom: 0;
-}
-body .container #logo {
-  margin: 15px 0 10px;
-  max-height: 45px;
-}
-body .container .jumbo h2 {
-  margin: 0 0 30px;
-  font-size: 30px;
-  color: #fff;
-}
-body .container .panel {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  border: none;
-  color: #555555;
-}
-body .container .panel .panel-title {
-  font-size: 22px;
-  font-family: "clear_sansregular", "San Francisco", "Helvetica Neue", Arial, sans-serif;
-}
-body .container .panel .panel-title a {
-  text-decoration: none;
-}
-body .container .panel .panel-title a:hover {
-  text-decoration: none;
-  color: #000000;
-}
-body .container .panel .panel-title .caret {
-  color: #9A9A9A;
-  margin-right: 10px;
-}
-body .container .panel .panel-body {
-  padding: 0;
-}
-body .container .panel .panel-body .list-group {
-  margin-bottom: 0;
-}
-body .container .panel .panel-body .list-group .list-group-item {
-  border: none;
-  border-bottom: 2px solid #DDDDDD;
-}
-body .container .panel .panel-body .list-group .list-group-item .glyphicon {
-  font-size: 16px;
-  margin-right: 5px;
-}
-body .container .footer {
-  display: inline;
-  font-size: 18px;
-  padding: 15px;
-  color: #273068;
-}
-body .container .footer .copyright {
-  float: left;
-}
-body .container .footer .infolinks {
-  float: right;
-  display: inline;
-}
-body .container .footer .infolinks a {
-  margin-left: 10px;
-  text-decoration: none;
-  color: #273068;
-}
-body .container .footer .infolinks a:hover {
-  border-bottom: 1px dotted #273068;
-  text-decoration: none;
-  color: #273068;
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 18px !important;
+  }
+  body .panel-title {
+    font-size: 22px !important;
+  }
+  body .jumbo h2 {
+    font-size: 30px !important;
+  }
 }

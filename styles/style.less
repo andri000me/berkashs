@@ -35,10 +35,11 @@
 
 }
 
-body {
+@media screen {
+  body {
   background-color: @indigo-blue;
   overflow-y: scroll;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   font-family: "clear_sansregular", @font-callback ;
   color: white;
@@ -47,6 +48,7 @@ body {
     min-height: 100vh;
     background-color: @indigo-blue;
     height: auto;
+    padding: 0;
     bottom: 0;
     #logo {
       top: auto;
@@ -56,7 +58,7 @@ body {
     }
     .jumbo h2 {
       margin: 0 0 30px;
-      font-size: 30px;
+      font-size: 24px;
         color: #fff;
     }
     .panel {
@@ -65,7 +67,7 @@ body {
       color: @dark-grey;
 
       .panel-title {
-        font-size: 22px;
+        font-size: 18px;
         font-family: "clear_sansregular", @font-callback;
         a {
           text-decoration: none;
@@ -119,6 +121,18 @@ body {
       }
     }
   }
+  @media (min-width: 600px){
+      font-size: 18px !important; 
+    .panel-title {
+      font-size: 22px !important;
+    }
+    .jumbo h2 {
+      font-size: 30px !important;
+    }
+    
+  }
   
 }
 
+
+}
