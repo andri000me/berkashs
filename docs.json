@@ -47,17 +47,6 @@
 
 	 ]
 	},
-	{"name" : "Biologi SBMPTN",
-	 "heading": "Kumpulan Soal Biologi Seleksi PTN",
-	 "description": "Soal-soal berikut merupakan soal-soal biologi SBMPTN.",
-	 "contents": [
-	 	{"cname" : "Biologi Seleksi PTN 2001", "clink" : "./docs/biosbm/BI-2001.pdf"},
-	 	{"cname" : "Biologi Seleksi PTN 2002", "clink" : "./docs/biosbm/BI-2002.pdf"},
-	 	{"cname" : "Biologi Seleksi PTN 2004", "clink" : "./docs/biosbm/BI-2003.pdf"},
-	 	{"cname" : "Biologi Seleksi PTN 2004", "clink" : "./docs/biosbm/BI-2004.pdf"},
-	 	{"cname" : "Biologi Seleksi PTN 2005", "clink" : "./docs/biosbm/BI-2005.pdf"}
-	 ]
-	},
 	{"name" : "Kimia SBMPTN",
 	 "heading": "Kumpulan Soal Kimia Seleksi PTN",
 	 "description": "Soal-soal berikut merupakan soal-soal kimia SBMPTN sejak tahun 1970-an.",
